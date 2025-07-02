@@ -22,8 +22,8 @@ scripts/inference/main.py \
 	--seed=0 \
 	--resolution=512 \
 	--output_resolution=256 \
-	--eval_batch_size= \
-	--dataloader_num_workers= \
+	--eval_batch_size=1 \
+	--dataloader_num_workers=4 \
 	--mixed_precision="fp16"
 
 	# --stage2_model_name_or_path ""
