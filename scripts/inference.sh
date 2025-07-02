@@ -15,7 +15,7 @@ accelerate launch --config_file $ACC_CONFIG_FILE --num_processes $NUM_PROCESSES 
 scripts/inference/main.py \
     --pretrained_model_name_or_path "/kaggle/working/DiffHarmony/checkpoints/diffharmonry-checkpoint/base" \
     --pretrained_vae_model_name_or_path "/kaggle/working/DiffHarmony/checkpoints/diffharmonry-checkpoint/condition_vae" \
-    --pretrained_unet_model_name_or_path "/kaggle/working/DiffHarmony/checkpoints/diffharmonry-checkpoint/refinement" \
+    --pretrained_unet_model_name_or_path "/kaggle/working/DiffHarmony/checkpoints/diffharmonry-checkpoint/base/uneta" \
     --dataset_root $DATA_DIR \
 	--test_file $TEST_FILE \
     --output_dir $OUTPUT_DIR \
