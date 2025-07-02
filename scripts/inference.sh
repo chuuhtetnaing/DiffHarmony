@@ -13,9 +13,9 @@ TEST_FILE=test.jsonl
 
 accelerate launch --config_file $ACC_CONFIG_FILE --num_processes $NUM_PROCESSES --main_process_port $MASTER_PORT \
 scripts/inference/main.py \
-    --pretrained_model_name_or_path checkpoints/stable-diffusion-inpainting \
-    --pretrained_vae_model_name_or_path checkpoints/sd-vae-ft-mse \
-    --pretrained_unet_model_name_or_path "" \
+    --pretrained_model_name_or_path "/kaggle/working/DiffHarmony/checkpoints/diffharmonry-checkpoint/base" \
+    --pretrained_vae_model_name_or_path "/kaggle/working/DiffHarmony/checkpoints/diffharmonry-checkpoint/condition_vae" \
+    --pretrained_unet_model_name_or_path "/kaggle/working/DiffHarmony/checkpoints/diffharmonry-checkpoint/refinement" \
     --dataset_root $DATA_DIR \
 	--test_file $TEST_FILE \
     --output_dir $OUTPUT_DIR \
