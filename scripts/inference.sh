@@ -4,7 +4,7 @@ export CUDA_VISIBLE_DEVICES="0,1"
 NUM_PROCESSES=2
 MASTER_PORT=29500
 
-OUTPUT_DIR=""
+OUTPUT_DIR="out"
 mkdir -p $OUTPUT_DIR
 cat "$0" >> $OUTPUT_DIR/run_script.sh
 
