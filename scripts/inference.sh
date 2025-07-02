@@ -1,6 +1,6 @@
 export PYTHONPATH=.:$PYTHONPATH
 ACC_CONFIG_FILE="configs/acc_configs/multi_default.yaml"
-export CUDA_VISIBLE_DEVICES="0,1"
+export CUDA_VISIBLE_DEVICES="0"
 NUM_PROCESSES=2
 MASTER_PORT=29500
 
